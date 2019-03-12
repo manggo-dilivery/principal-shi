@@ -1,0 +1,43 @@
+/* pages/sign_up/sign_up.wxss */
+.container{
+  width:100%;
+  height:auto;
+}
+.list{
+  width:100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  border-bottom:1rpx solid #ddd;
+  padding: 20rpx 0;
+}
+.item-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:550rpx;
+  margin-left:20rpx;
+}
+.item-left{
+  margin-left:20rpx;
+}
+.item-left image{
+  width:130rpx;
+  height: 130rpx;
+}
+.item-right image{
+  width:30rpx;
+  height: 30rpx;
+}
+.item-right-view text:first-child{
+  font-size: 32rpx;
+}
+.item-right-view text:nth-child(2){
+  font-size:24rpx;
+  color:#888;
+  margin-left:10rpx;
+}
+.item-right-view text:nth-child(3){
+  display:block;
+  margin-top:20rpx;
+}

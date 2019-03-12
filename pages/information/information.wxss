@@ -1,0 +1,44 @@
+/* pages/information/information.wxss */
+.container {
+width:100%;
+height: auto;
+} 
+Page{
+padding: 0;
+margin:0;
+box-sizing:border-box;
+}
+.artList{
+  width: 92%;
+  height: auto;
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.artList_item{
+  width: 100%;
+  height: 190rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.artList .artList_img {
+  float: right;
+  width: 34%;
+}
+.artList .artList_img image{
+  width: 240rpx;
+  height: 160rpx;
+}
+.artList_text{
+  width: 61%;
+  float: left;
+}
+.artList_text .content {
+  font-size: 32rpx;
+  color: #333;
+}
+.artList_text .artList_title {
+  margin-top: 30rpx;
+  display: block;
+  font-size: 22rpx;
+  color: #999;
+}

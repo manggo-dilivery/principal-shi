@@ -1,0 +1,55 @@
+<!--pages/near_school/near_school.wxml-->
+<view class='title'>
+    <block wx:for="{{['离我最近','最新加入']}}" wx:key='id'>
+      <view data-index='{{index}}' bindtap='tabchange'>
+          <text class="{{currentIndex==index?'selected':''}}">{{item}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='title-item'  hidden='{{currentIndex != 0}}'>
+      <scroll-view bindscrolltolower="load_more_school" scroll-y style="width: 100%;height:1200rpx;">
+        <view wx:for="{{school_list}}" wx:key="{{key}}" data-id="{{item.id}}" class='title-item-list' bindtap='business_detail'>  
+          <view class='title-item-list-view1'>
+            <image src='{{item.banner}}'></image>
+          </view>
+          <view  class='title-item-list-view2'>
+            <text>{{item.name}}</text>
+            <view style='margin-bottom:5rpx;'><image src='/icon/index-phone.png'></image>{{item.mobile}}</view>
+            <view><image src='/icon/index-location.png'></image>{{item.address}}</view>
+          </view> 
+          <view  class='title-item-list-view3'>
+            <view>
+              <image src='/icon/index-see.png'></image>
+              {{item.hits}}
+            </view>
+            <view>
+              {{item.distance}}
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+
+  </view>
+  <view class='title-item' hidden='{{currentIndex != 1}}'>
+    <scroll-view bindscrolltolower="load_more_school" scroll-y style="width: 100%;height:1200rpx;">
+    <view wx:for="{{school_list}}" wx:key="{{key}}" data-id="{{item.id}}" class='title-item-list' bindtap='business_detail'>  
+      <view class='title-item-list-view1'>
+        <image src='{{item.banner}}'></image>
+      </view>
+      <view  class='title-item-list-view2'>
+        <text>{{item.name}}</text>
+        <view style='margin-bottom:5rpx;'><image src='/icon/index-phone.png'></image>{{item.mobile}}</view>
+        <view><image src='/icon/index-location.png'></image>{{item.address}}</view>
+      </view> 
+      <view  class='title-item-list-view3'>
+        <view>
+          <image src='/icon/index-see.png'></image>
+          {{item.hits}}
+        </view>
+        <view>
+          {{item.distance}}
+        </view>
+      </view>
+    </view>
+    </scroll-view>
+  </view>

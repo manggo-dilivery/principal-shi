@@ -1,0 +1,90 @@
+/* pages/collect/collect.wxss */
+.container {
+  width:100%;
+  height: auto;
+} 
+Page{
+  padding: 0;
+  margin:0;
+  box-sizing:border-box;
+}
+.box {
+  width: 94%;
+  height: auto;
+  margin: 0 auto;
+}
+.artList{
+  width: 100%;
+  height: auto;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  border-top: 10rpx solid #ededed;
+  padding: 20rpx 0;
+}
+.list-img {
+  width: 18%;
+}
+.list-title {
+  width: 50%;
+  margin-left: 50rpx;
+}
+.list-collect  {
+  width: 23%;
+  margin-left: 10rpx;
+}
+.list-title .bottom-size {
+  background-color: #fff;
+  border: 2rpx solid #ececec;
+  border-radius: 40rpx;
+  text-align: center;
+  height: 60rpx;
+  width: 80%;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.list-title>text {
+  width:70%;
+  color: #333;
+  display: block;
+  font-weight: 600;
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-title .bottom-size>text {
+  color: #bf2c2b;
+  font-size: 28rpx;
+}
+.list-title .bottom-size>image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 14rpx;
+  margin-left: 20rpx;
+}
+.list-title .list-name{
+  width: 50%;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-img>image {
+  width: 160rpx;
+  height: 160rpx;
+}
+.list-collect {
+  display: flex;
+  margin-top: 10rpx;
+}
+.list-collect>image {
+  width: 35rpx;
+  height: 35rpx;
+  padding-right: 10%;
+}
+.list-collect>text {
+  color: #d7d4d4;
+  font-size: 24rpx;
+}

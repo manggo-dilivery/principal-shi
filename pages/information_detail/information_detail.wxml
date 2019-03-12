@@ -1,0 +1,13 @@
+<!--pages/advisoryDetails/advisoryDetails.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='container'>
+  <view class='head-title'>
+    <text>{{title}}</text>
+  </view>
+  <view class='head-time'>
+    <text>{{time}}</text>
+  </view>
+  <view style="padding:30rpx;"> 
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>

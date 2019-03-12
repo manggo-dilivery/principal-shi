@@ -1,0 +1,118 @@
+<!--pages/tool/tool.wxml-->
+<view class='container'>
+  <view class="list" style="margin-top:0;">
+    <view class="item">
+       <view class='item-left'>
+          <image mode='aspectFill' src='/image/xiaobanner.jpg'></image>
+       </view>
+       <view class="item-right">
+          <view class="item1">
+            <text>超级团购</text>
+            <text>1.3km</text>
+          </view>
+          <view class="item2">
+            <image src='/image/share.png'></image>
+            <text>汉瑞德国际学校</text>
+          </view>
+          <view class="item3">
+            <view><image src='/image/share.png'></image><text>5156</text></view>
+            <view><image src='/image/share.png'></image><text>1200</text></view>
+          <view><image src='/image/share.png'></image><text>1200人参与</text></view>
+          </view>
+          
+       </view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="item">
+       <view class='item-left'>
+          <image mode='aspectFill' src='/image/xiaobanner.jpg'></image>
+       </view>
+       <view class="item-right">
+          <view class="item1">
+            <text>超级团购</text>
+            <text>1.3km</text>
+          </view>
+          <view class="item2">
+            <image src='/image/share.png'></image>
+            <text>汉瑞德国际学校</text>
+          </view>
+          <view class="item3">
+            <view><image src='/image/share.png'></image><text>5156</text></view>
+            <view><image src='/image/share.png'></image><text>1200</text></view>
+          <view><image src='/image/share.png'></image><text>1200人参与</text></view>
+          </view>
+          
+       </view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="item">
+       <view class='item-left'>
+          <image mode='aspectFill' src='/image/xiaobanner.jpg'></image>
+       </view>
+       <view class="item-right">
+          <view class="item1">
+            <text>超级团购</text>
+            <text>1.3km</text>
+          </view>
+          <view class="item2">
+            <image src='/image/share.png'></image>
+            <text>汉瑞德国际学校</text>
+          </view>
+          <view class="item3">
+            <view><image src='/image/share.png'></image><text>5156</text></view>
+            <view><image src='/image/share.png'></image><text>1200</text></view>
+          <view><image src='/image/share.png'></image><text>1200人参与</text></view>
+          </view>
+          
+       </view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="item">
+       <view class='item-left'>
+          <image mode='aspectFill' src='/image/xiaobanner.jpg'></image>
+       </view>
+       <view class="item-right">
+          <view class="item1">
+            <text>超级团购</text>
+            <text>1.3km</text>
+          </view>
+          <view class="item2">
+            <image src='/image/share.png'></image>
+            <text>汉瑞德国际学校</text>
+          </view>
+          <view class="item3">
+            <view><image src='/image/share.png'></image><text>5156</text></view>
+            <view><image src='/image/share.png'></image><text>1200</text></view>
+          <view><image src='/image/share.png'></image><text>1200人参与</text></view>
+          </view>
+          
+       </view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="item">
+       <view class='item-left'>
+          <image mode='aspectFill' src='/image/xiaobanner.jpg'></image>
+       </view>
+       <view class="item-right">
+          <view class="item1">
+            <text>超级团购</text>
+            <text>1.3km</text>
+          </view>
+          <view class="item2">
+            <image src='/image/share.png'></image>
+            <text>汉瑞德国际学校</text>
+          </view>
+          <view class="item3">
+            <view><image src='/image/share.png'></image><text>5156</text></view>
+            <view><image src='/image/share.png'></image><text>1200</text></view>
+          <view><image src='/image/share.png'></image><text>1200人参与</text></view>
+          </view>
+          
+       </view>
+    </view>
+  </view>
+</view>

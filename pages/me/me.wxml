@@ -1,0 +1,97 @@
+<!--pages/me/me.wxml-->
+<!--pages/mine/mine.wxml-->
+<view class='container'>
+
+    <view class='top'>
+      <view class='top-image'>
+         <image src='../../image/wave.jpg'></image> 
+      </view>
+    </view>
+
+
+
+    <view class='top-detail'>
+      <image class='portrait' src='{{userinfo.avatarUrl}}'></image>
+      <text>{{userinfo.nickName}}</text>
+      <!-- <image class='icon' src='../../images/arrow.png'></image> -->
+    </view>
+
+    <view class='list'>
+
+      <view class='item'>
+        <view class='item-text' bindtap='my_activity'>
+          <image src='../../icon/me(1).png'></image>
+          <text>我的活动</text>
+        </view>
+        <view class='item-icon'>
+          <image src='../../icon/arrow.png'></image>
+        </view>
+      </view>
+
+      <view class='item'>
+        <view class='item-text' bindtap='collect'>
+          <image src='../../icon/list.png'></image>
+          <text>我的收藏</text>
+        </view>
+        <view class='item-icon'>
+          <image src='../../icon/arrow.png'></image>
+        </view>
+      </view>
+
+        <view class='item' style='margin-top:30rpx;'>
+          <view class='item-text' bindtap='about_us'>
+            <image src='../../icon/ticket.png'></image>
+            <text>关于我们</text>
+          </view>
+          <view class='item-icon'>
+            <image src='../../icon/arrow.png'></image>
+          </view>
+        </view>
+        <view class='item'>
+          <view class='item-text' bindtap='sign_up'>
+            <image src='../../icon/ticket.png'></image>
+            <text>报名管理</text>
+          </view>
+          <view class='item-icon'>
+            <image src='../../icon/arrow.png'></image>
+          </view>
+        </view>
+        <!-- <view class='item'>
+          <view class='item-text' bindtap='log_in'>
+            <image src='../../icon/list1.png'></image>
+            <text>登录</text>
+          </view>
+          <view class='item-icon'>
+            <image src='../../icon/arrow.png'></image>
+          </view>
+        </view>
+        <view class='item'>
+          <view class='item-text' bindtap='register'>
+            <image src='../../icon/list1.png'></image>
+            <text>注册</text>
+          </view>
+          <view class='item-icon'>
+            <image src='../../icon/arrow.png'></image>
+          </view>
+        </view> -->
+
+    </view>
+
+</view>
+
+
+<!--底部tabbar  -->
+<view class='bottom_tabbar'>
+  <view bindtap='home'>
+    <image src='../../icon/home.png'></image>
+    <text>首页</text>
+  </view>
+  <view bindtap='join_info'>
+    <view class='business-enter'><image class='bottom_tabbar_plus' src='../../icon/plus.png'></image></view>
+    <text style='font-size:25rpx;'>入驻</text>
+  </view>
+  <view bindtap='center'>
+    <image src='../../icon/me_active.png'></image>
+    <text class='active'>我的</text>
+  </view>
+</view>

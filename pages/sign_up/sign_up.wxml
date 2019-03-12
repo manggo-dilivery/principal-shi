@@ -1,0 +1,75 @@
+<!--pages/sign_up/sign_up.wxml-->
+<view class="container">
+  <view class='list' bindtap="sign_up_detail">
+    <view class="item-left">
+      <image src='/image/touxiang.png'></image>
+    </view>
+    <view class='item-right'>
+      <view class="item-right-view"><text>冯娅娜</text>
+        <text decode="true">微信昵称&nbsp;天下</text>
+        <text>18236881210</text>
+      </view>
+      <view><image src='/icon/arrow.png'></image></view>
+    </view>
+  </view>
+  <view class='list' bindtap="sign_up_detail">
+    <view class="item-left">
+      <image src='/image/touxiang.png'></image>
+    </view>
+    <view class='item-right'>
+      <view class="item-right-view"><text>冯娅娜</text>
+        <text decode="true">微信昵称&nbsp;天下</text>
+        <text>18236881210</text>
+      </view>
+      <view><image src='/icon/arrow.png'></image></view>
+    </view>
+  </view>
+  <view class='list' bindtap="sign_up_detail">
+    <view class="item-left">
+      <image src='/image/touxiang.png'></image>
+    </view>
+    <view class='item-right'>
+      <view class="item-right-view"><text>冯娅娜</text>
+        <text decode="true">微信昵称&nbsp;天下</text>
+        <text>18236881210</text>
+      </view>
+      <view><image src='/icon/arrow.png'></image></view>
+    </view>
+  </view>
+  <view class='list' bindtap="sign_up_detail">
+    <view class="item-left">
+      <image src='/image/touxiang.png'></image>
+    </view>
+    <view class='item-right'>
+      <view class="item-right-view"><text>冯娅娜</text>
+        <text decode="true">微信昵称&nbsp;天下</text>
+        <text>18236881210</text>
+      </view>
+      <view><image src='/icon/arrow.png'></image></view>
+    </view>
+  </view>
+  <view class='list' bindtap="sign_up_detail">
+    <view class="item-left">
+      <image src='/image/touxiang.png'></image>
+    </view>
+    <view class='item-right'>
+      <view class="item-right-view"><text>冯娅娜</text>
+        <text decode="true">微信昵称&nbsp;天下</text>
+        <text>18236881210</text>
+      </view>
+      <view><image src='/icon/arrow.png'></image></view>
+    </view>
+  </view>
+  <view class='list' bindtap="sign_up_detail">
+    <view class="item-left">
+      <image src='/image/touxiang.png'></image>
+    </view>
+    <view class='item-right'>
+      <view class="item-right-view"><text>冯娅娜</text>
+        <text decode="true">微信昵称&nbsp;天下</text>
+        <text>18236881210</text>
+      </view>
+      <view><image src='/icon/arrow.png'></image></view>
+    </view>
+  </view>
+</view>

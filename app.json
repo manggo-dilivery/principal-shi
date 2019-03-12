@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/me/me",
+    "pages/sign_up_detail/sign_up_detail",
+    "pages/sign_up/sign_up",
+    "pages/tool/tool",
+    "pages/my_activity/my_activity",
+    "pages/join_info/join_info",
+    "pages/register/register",
+    "pages/enter/enter",
+    "pages/log-in/log-in",
+    "pages/business-detail/business-detail",
+    "pages/temp_tabbar/temp_tabbar",
+    "pages/collect/collect",
+    "pages/information/information",
+    "pages/about_us/about_us",
+    "pages/near_school/near_school",
+    "pages/information_detail/information_detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "石校长",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,38 @@
+/* pages/about_us/about_us.wxss */
+.container {
+width:100%;
+height: auto;
+} 
+Page{
+padding: 0;
+margin:0;
+box-sizing:border-box;
+}
+.title {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 600;
+}
+.title>text {
+  font-size: 40rpx;
+}
+.time {
+  text-align: center;
+  margin-top: 10rpx
+}
+.time>text {
+  color: #888;
+  font-size: 28rpx;
+}
+.banner {
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 40rpx
+}
+.banner-center {
+   width: 100%;
+   height: auto
+}
+.banner .text-size {
+  line-height: 60rpx;
+}

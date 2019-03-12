@@ -1,0 +1,238 @@
+/* pages/business-detail/business-detail.wxss */
+page{
+  background: #eee;
+}
+.container{
+  width:100%;
+  height:auto;
+}
+text{
+  font-size:30rpx;
+  color:#555;
+}
+.top{
+  width:100%;
+  height:350rpx;
+  position: relative;
+}
+.top > image{
+  width:100%;
+  height:350rpx;
+  position:absolute;
+  z-index: -1;
+}
+.top-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-info > image{
+  width:130rpx;
+  height:130rpx;
+  margin-top:70rpx;
+}
+.top-info view image{
+  width:40rpx;
+  height:40rpx;
+}
+.top-info-name{
+  display: flex;
+  align-items: center;
+  margin-top:20rpx;
+}
+.top-info-name text{
+  color:#fff;
+  margin-right:10rpx;
+}
+/*收藏 */
+.collect{
+position: absolute;
+background: linear-gradient(to right,#facc07,#fcae13);
+right:0;
+top:25rpx;
+padding:12rpx 15rpx 12rpx 25rpx;
+border-radius:50rpx 0 0 50rpx;
+display: flex;
+align-items: center;
+}
+.collect image{
+width:35rpx;
+height:35rpx;
+}
+.collect text{
+color:#fff;
+margin-left:10rpx;
+font-size: 27rpx;
+}
+/*信息列表*/
+.list-info{
+  width:100%;
+  height:auto;
+  background: #fff;
+}
+.list{
+  width:95%;
+  height:auto;
+  margin:0 auto;
+  margin-top:20rpx;
+}
+.item{
+  display: flex;
+  align-items: center;
+  padding: 25rpx 0;
+  border-bottom:1rpx solid #eee;
+}
+.item image{
+  width:35rpx;
+  height:35rpx;
+  margin-left:20rpx;
+}
+.item text{
+  margin-left:20rpx;
+  letter-spacing: 2rpx;
+  font-weight: bold;
+  color:#888;
+}
+/*近期来访  */
+.visit{
+  width:100%;
+  height:auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  margin-top:10rpx;
+  padding: 15rpx 0;
+}
+.visit-left image{
+  width:50rpx;
+  height:50rpx;
+  border-radius:50%;
+  margin-left:-10rpx;
+}
+.visit-right image{
+  width:35rpx;
+  height:35rpx;
+}
+.visit-left{
+  display: flex;
+  align-items: center;
+}
+.visit-left text{
+  margin-left:30rpx;
+}
+.visit-left image:first-of-type{
+  margin-left:30rpx;
+}
+.visit-right{
+  display: flex;
+}
+.visit-right view{
+  width:140rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-left:1rpx solid #eee;
+}
+/*主页详情  */
+.title{
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  margin-top:20rpx;
+  border-bottom:1rpx solid #eee;
+}
+.title text{
+  display: block;
+  width:150rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-weight: bold;
+  color:#666;
+}
+.selected{
+  border-bottom:4rpx solid #ff9f4b;
+}
+/*主页  */
+.home{
+  width:100%;
+  height:auto;
+  background: #fff;
+  padding-bottom: 120rpx;
+}
+.home-content{
+  width:90%;
+  height:auto;
+  margin:0 auto;
+}
+.home-content image{
+  width:100%;
+  height:400rpx;
+  margin-top:5rpx;
+}
+.home-content text{
+  display: block;
+  font-size:30rpx;
+  margin-bottom:20rpx;
+  text-align: justify;
+}
+/*课程  */
+.schedule{
+  width:100%;
+  height:auto;
+  background: #fff;
+}
+.schedule-content{
+  width:90%;
+  height:auto;
+  margin:0 auto;
+  padding-bottom: 120rpx;
+}
+
+/*底部tabbar  */
+/*底部样式  */
+.bottom_tabbar{
+  width:100%;
+  height:90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  position: fixed;
+  bottom:0;
+  left:0;
+  border-top:2rpx solid #eee;
+}
+.bottom_tabbar view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom_tabbar image{
+  width:45rpx;
+  height:45rpx;
+}
+.enter{
+  width:47rpx;
+  height:47rpx;
+}
+.bottom_tabbar_plus{
+  position:absolute;
+  width:75rpx !important;
+  height:75rpx !important;
+  top:-30rpx;
+}
+/* 分享按钮 */
+.business_detail_btn{
+width:108rpx;
+height:50rpx;
+font-size: 26rpx;
+line-height:50rpx;
+background: #fff;
+}
+.business_detail_btn::after{
+border:none;
+outline:none;
+}

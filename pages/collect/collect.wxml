@@ -1,0 +1,23 @@
+<!--pages/collect/collect.wxml-->
+<view class='container'>
+  <view class='box'>
+    <view class='artList' wx:for="{{list}}" wx:key="{{key}}">
+      <view class='list-img'>
+        <image src='{{item.school.banner}}'></image>
+      </view>
+      <view class='list-title'>
+        <text>{{item.school.name}}</text>
+        <text class='list-name'>{{item.school.contact}}</text>
+      <view class='bottom-size'>
+        <image src='/image/ihone-5.png'></image>
+        <text>{{item.school.mobile}}</text>
+      </view>
+      </view>
+
+      <view class='list-collect' data-id="{{item.id}}" bindtap='confirm_cancle_collect'>
+        <image src='/image/collect_star.png'></image>
+        <text>取消收藏</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,60 @@
+/* pages/tool/tool.wxss */
+page{
+  background: #eee;
+}
+.container{
+  width:100%;
+  height: auto;
+}
+.list{
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 20rpx 0;
+  margin-top:10rpx;
+}
+.item{
+  display: flex;
+  align-items: center;
+}
+.item-left image{
+  width:150rpx;
+  height: 150rpx;
+  margin-left:20rpx;
+}
+.item-right{
+  margin-left:20rpx;
+   width:530rpx; 
+}
+.item1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-right image{
+  width:30rpx;
+  height: 30rpx;
+}
+.item3{
+  display: flex;
+  justify-content: space-around;
+  border-top:1rpx solid #ddd;
+}
+.item2 text{
+  color: #fe9e4a;
+  margin-left:10rpx;
+  font-size:26rpx;
+}
+.item2{
+  padding:10rpx 0;
+}
+.item3 view:first-child{
+  margin-left:-30rpx;
+}
+.item3 view:last-child{
+  margin-right:-30rpx;
+}
+.item3 text{
+  font-size:26rpx;
+  margin-left:10rpx;
+}

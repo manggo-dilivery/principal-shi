@@ -1,0 +1,140 @@
+<!--index.wxml-->
+<view class='top'>
+  <swiper circular='true' indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{slide_thumbs}}" wx:key="{{key}}">
+      <swiper-item>
+        <image style='width:750rpx; height:310rpx' src="{{item.image}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!--分类  -->
+<view class='category'>
+  <view class='category-item' bindtap='near_school'>
+    <image src='../../icon/near.png'></image>
+    <text>附近学校</text>
+  </view>
+  <view class='category-item' bindtap="case_list">
+    <image src='../../icon/plan.png'></image>
+    <text>线上活动</text>
+  </view>
+  <view class='category-item' bindtap="activity_list">
+    <image src='../../icon/tool.png'></image>
+    <text>线下沙龙</text>
+  </view>
+  <view class='category-item' bindtap='information'>
+    <image src='../../icon/news.png'></image>
+    <text>家长内参</text>
+  </view>
+</view>
+
+<!--中间tab切换  -->
+  
+  <view class='title'>
+    <block wx:for="{{['离我最近','最新加入']}}" wx:key='id'>
+      <view data-index='{{index}}' bindtap='tabchange'>
+          <text class="{{currentIndex==index?'selected':''}}">{{item}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='title-item'  hidden='{{currentIndex != 0}}'>
+
+    <view wx:for="{{school_list}}" wx:key="{{key}}" data-id="{{item.id}}" class='title-item-list' bindtap='business_detail'>  
+      <view class='title-item-list-view1'>
+        <image src='{{item.banner}}'></image>
+      </view>
+      <view  class='title-item-list-view2'>
+        <text>{{item.name}}</text>
+        <view style='margin-bottom:5rpx;'><image src='/icon/index-phone.png'></image>{{item.mobile}}</view>
+        <view><image src='/icon/index-location.png'></image>{{item.address}}</view>
+      </view> 
+      <view  class='title-item-list-view3'>
+        <view>
+          <image src='/icon/index-see.png'></image>
+          {{item.hits}}
+        </view>
+        <view>
+          {{item.distance}}
+        </view>
+      </view>
+    </view>
+
+    <!-- <view class='title-item-list' bindtap='business_detail'>  
+      <view class='title-item-list-view1'>
+        <image src='/image/beef.jpg'></image>
+      </view>
+      <view  class='title-item-list-view2'>
+        <text>苏氏牛肉面（单人豪华套餐）</text>
+        <view style='margin-bottom:5rpx;'><image src='/icon/index-phone.png'></image>154623237070</view>
+        <view><image src='/icon/index-location.png'></image>苏轼牛肉面（淮河路店）</view>
+      </view> 
+      <view  class='title-item-list-view3'>
+        <view>
+          <image src='/icon/index-see.png'></image>
+          116
+        </view>
+        <view>
+          2.3km
+        </view>
+      </view>
+    </view>
+    <view class='title-item-list' bindtap='business_detail'>  
+      <view class='title-item-list-view1'>
+        <image src='/image/kfc.jpg'></image>
+      </view>
+      <view  class='title-item-list-view2'>
+        <text>肯德基（郑州客运总站餐厅）</text>
+        <view style='margin-bottom:5rpx;'><image src='/icon/index-phone.png'></image>154623237070</view>
+        <view><image src='/icon/index-location.png'></image>郑州客运总站</view>
+      </view> 
+      <view  class='title-item-list-view3'>
+        <view>
+          <image src='/icon/index-see.png'></image>
+          116
+        </view>
+        <view>
+          2.3km
+        </view>
+      </view>
+    </view> -->
+
+  </view>
+  <view class='title-item' hidden='{{currentIndex != 1}}'>
+    <view wx:for="{{school_list}}" wx:key="{{key}}" data-id="{{item.id}}" class='title-item-list' bindtap='business_detail'>  
+      <view class='title-item-list-view1'>
+        <image src='{{item.banner}}'></image>
+      </view>
+      <view  class='title-item-list-view2'>
+        <text>{{item.name}}</text>
+        <view style='margin-bottom:5rpx;'><image src='/icon/index-phone.png'></image>{{item.mobile}}</view>
+        <view><image src='/icon/index-location.png'></image>{{item.address}}</view>
+      </view> 
+      <view  class='title-item-list-view3'>
+        <view>
+          <image src='/icon/index-see.png'></image>
+          {{item.hits}}
+        </view>
+        <view>
+          {{item.distance}}
+        </view>
+      </view>
+    </view>
+  </view>
+<!--底部tabbar  -->
+<view class='bottom_tabbar'>
+  <view bindtap='home'>
+    <image src='/icon/home_active.png'></image>
+    <text>首页</text>
+  </view>
+  <view bindtap='join_info'>
+    <view class='enter'><image class='bottom_tabbar_plus' src='/icon/plus.png'></image></view>
+    <text style='font-size:25rpx;'>入驻</text>
+  </view>
+  <view bindtap='center'>
+    <image src='/icon/me.png'></image>
+    <text>我的</text>
+  </view>
+</view>
+

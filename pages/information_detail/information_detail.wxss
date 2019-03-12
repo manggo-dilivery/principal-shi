@@ -1,0 +1,44 @@
+/* pages/advisoryDetails/advisoryDetails.wxss */
+@import "../../wxParse/wxParse.wxss";
+page{
+  background: #fff;
+}
+.container{
+  width:100%;
+  height:auto;
+  padding-bottom:40rpx;
+}
+.head-title{
+  text-align: center;
+  margin-top: 50rpx;
+}
+.head-title>text {
+  color: #333;
+  font-size: 40rpx;
+}
+.head-time {
+  text-align: center; 
+  margin-top: 10rpx;
+  margin-bottom:20rpx;
+}
+.head-time >text {
+  color: 8a8a8a;
+  font-size: 30rpx;
+}
+.small-box {
+  width: 92%;
+  margin: 0 auto;
+}
+.image_all {
+  width:100%;
+}
+.box-size {
+  margin-top: 20rpx;
+}
+.box-size>text {
+  line-height: 50rpx;
+  font-size: 30rpx;
+}
+.mTop{
+  margin-top: 40rpx;
+}

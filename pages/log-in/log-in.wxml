@@ -1,0 +1,39 @@
+<!--pages/log-in/log-in.wxml-->
+<view class='list'>
+  <form>
+
+    <view class='item'>
+      <text>账号</text>
+      <input type='text' name='phone_number' placeholder='请输入手机号'></input>
+    </view>
+    <view class='item'>
+      <text>密码</text>
+      <input type='text' name='password' placeholder='请输入密码'></input>
+    </view>
+    <view class='forgot-pswd'>
+      <text>忘记密码？</text>
+    </view>
+
+  <button type='submit' class='btn'>登录</button>
+  <view class='no-account' bindtap='register'>
+    <text>没有账号？请先注册</text>
+  </view>
+  </form>
+</view>
+
+
+<!--底部tabbar  -->
+<view class='bottom_tabbar'>
+  <view bindtap='home'>
+    <image src='../../icon/home.png'></image>
+    <text>首页</text>
+  </view>
+  <view bindtap='join_info'>
+    <view class='business-enter'><image class='bottom_tabbar_plus' src='../../icon/plus.png'></image></view>
+    <text style='font-size:25rpx;'>入驻</text>
+  </view>
+  <view bindtap='center'>
+    <image src='../../icon/me_active.png'></image>
+    <text class='active'>我的</text>
+  </view>
+</view>

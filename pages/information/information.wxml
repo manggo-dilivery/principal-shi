@@ -1,0 +1,67 @@
+<!--pages/information/information.wxml-->
+<view class='container'>
+<view class='artList'>
+    <view class='artList_item' wx:for="{{list}}" wx:key="{{key}}" data-id="{{item.id}}" bindtap="information_detail">
+     <view class='artList_text' >
+          <text class='content'>{{item.post_title}}</text>
+          <text class='artList_title'>{{item.create_time}}</text>
+        </view>
+        <view class='artList_img'>
+          <image src='{{item.thumbnail}}'></image>
+        </view>
+     </view>
+<!-- 
+     <view class='artList_item' >
+     <view class='artList_text'>
+          <text class='content'>有出息的孩子大都有这三个特质，里面有你家孩子吗</text>
+          <text class='artList_title'>亲子沟通如何说</text>
+        </view>
+        <view class='artList_img'>
+          <image src='/image/head-photo2.jpg'></image>
+        </view>
+     </view>
+
+     <view class='artList_item' >
+     <view class='artList_text'>
+          <text class='content'>“你犯了一个错误，太好了”敢不敢对孩子这样说?</text>
+          <text class='artList_title'>育儿头条</text>
+        </view>
+        <view class='artList_img'>
+          <image src='/image/head-photo3.jpg'></image>
+        </view>
+     </view>
+
+      <view class='artList_item' >
+     <view class='artList_text'>
+          <text class='content'>现在带孩子做好这件事，未来他才有足够底气去面对风雨</text>
+          <text class='artList_title'>育儿秘籍</text>
+        </view>
+        <view class='artList_img'>
+          <image src='/image/head-photo4.jpg'></image>
+        </view>
+     </view>      
+
+      <view class='artList_item' >
+     <view class='artList_text'>
+          <text class='content'>还在担心女儿遇人不淑，爸爸只要做这些事就能轻松避免了</text>
+          <text class='artList_title'>豆宝娘亲</text>
+        </view>
+        <view class='artList_img'>
+          <image src='/image/head-photo5.jpg'></image>
+        </view>
+     </view>      
+
+      <view class='artList_item' >
+     <view class='artList_text'>
+          <text class='content'>手足口病大高峰即将到来，家长们要时刻警惕起来</text>
+          <text class='artList_title'>育儿头条</text>
+        </view>
+        <view class='artList_img'>
+          <image src='/image/head-photo6.jpg'></image>
+        </view>
+     </view>                 -->
+
+</view>
+</view>
+
+

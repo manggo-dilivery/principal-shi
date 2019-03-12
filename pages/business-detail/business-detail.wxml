@@ -1,0 +1,103 @@
+<!--pages/business-detail/business-detail.wxml-->
+<view class='container'>
+  <view class='top'>
+    <image src='../../image/business-detail.jpg'></image>
+    <view class='top-info'>
+      <image src='{{school.banner}}'></image>
+      <view class='top-info-name'>
+        <text>{{school.name}}</text>
+        <!-- <image src='../../icon/business-star.png' bindtap="collect_school"></image> -->
+      </view>
+    </view>
+    <view class='collect' bindtap='collect_school'>
+      <image hidden='{{currentIndex1 !=0}}' src='/icon/star.png'></image>
+      <image hidden='{{currentIndex1 !=1}}' src='/icon/star_active.png'></image>
+      <text>加入收藏</text>
+    </view>
+  </view>
+  <!--信息列表  -->
+  <view class='list-info'>
+    <view class='list'>
+      <view class='item'>
+        <image src='../../icon/time.png'></image>
+        <text>{{school.business_time1}}</text>
+      </view>
+      <view class='item' bindtap="make_phone">
+        <image src='../../icon/phone.png'></image>
+        <text>{{school.mobile}}</text>
+      </view>
+      <view class='item'>
+        <image src='../../icon/weixin.png'></image>
+        <text>{{school.wxnumber}}</text>
+      </view>
+      <view class='item' bindtap="location">
+        <image src='../../icon/location.png'></image>
+        <text>{{school.address}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='visit'>
+    <view class='visit-left'>
+      <text>近期来访</text>
+      <block wx:for="{{visit_list}}" wx:key="{{key}}">
+         <image src='{{item.avatar}}'></image>
+      </block>
+      <!-- <image src='../../image/wangwang.jpg'></image>
+      <image src='../../image/wangwang.jpg'></image>
+      <image src='../../image/wangwang.jpg'></image> -->
+      <text>{{school.hits}}次</text>
+    </view>
+    <view class='visit-right'>
+      <view bindtap="vote_school"> 
+        <image src='../../icon/prise.jpg'></image>
+        <text>{{school.votes}}</text>
+      </view>
+      <view>
+        <button open-type="share" class='business_detail_btn' style="height:100rpx;">
+          <image src='../../icon/share.jpg'></image>
+          <text style="font-size:26rpx;display:block;">分享</text>
+        </button>
+      </view>
+    </view>
+  </view>
+
+  <!--主页、课程详情  -->
+  <view class='title'>
+    <block wx:for="{{['介绍']}}" wx:key='id'>
+      <view class="title-item" data-index='{{index}}' bindtap='tabchange'>
+          <text class="{{currentIndex==index?'selected':''}}">{{item}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='home' hidden='{{currentIndex !=0}}'>
+    <view class='home-content'>
+        <text>
+          {{school.description}}
+        </text>
+        <block wx:for="{{school.photos}}" wx:key="{{key}}">
+          <image src='{{item}}'></image>
+        </block>
+      
+    </view>
+  </view>
+  <view class='schedule' hidden='{{currentIndex !=1}}'>
+    <view class='schedule-content'>
+      <text>暂无课程</text>
+    </view>
+  </view>
+</view>
+
+<view class='bottom_tabbar'>
+  <view bindtap='home'>
+    <image src='/icon/home.png'></image>
+    <text>首页</text>
+  </view>
+  <view bindtap='join_info'> 
+    <view class='enter'><image class='bottom_tabbar_plus' src='/icon/plus.png'></image></view>
+    <text style='font-size:25rpx;'>入驻</text>
+  </view>
+  <view bindtap='center'>
+    <image src='/icon/me.png'></image>
+    <text>我的</text>
+  </view>
+</view>

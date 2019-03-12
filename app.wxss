@@ -1,0 +1,13 @@
+/**app.wxss**/
+
+page{
+  padding: 0;
+  margin:0;
+}
+text{
+  font-size:30rpx;
+  color:#555;
+}
+input{
+  font-size:30rpx;
+}
